@@ -10,7 +10,6 @@
 
 @protocol TopDelegate
 
--(void) topRevealButtonTapped;
 
 @end
 
