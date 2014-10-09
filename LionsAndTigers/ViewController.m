@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TopViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <TopDelegate>
+
 
 @end
 
@@ -23,5 +25,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 @end
