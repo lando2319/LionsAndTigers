@@ -16,16 +16,16 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPf-t7-ugI">
+                                <rect key="frame" x="0.0" y="41" width="600" height="566"/>
+                                <connections>
+                                    <segue destination="vtN-ef-3F6" kind="embed" id="t4l-Ff-bs1"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hoR-sT-gRF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="mHL-Nm-5cp" kind="embed" id="fv3-cD-nGN"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPf-t7-ugI">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
-                                <connections>
-                                    <segue destination="vtN-ef-3F6" kind="embed" id="t4l-Ff-bs1"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2502" y="-1000"/>
+            <point key="canvasLocation" x="2501" y="-979"/>
         </scene>
         <!--Top View Controller-->
         <scene sceneID="DH5-E6-zuC">
@@ -70,24 +70,46 @@
             </objects>
             <point key="canvasLocation" x="3609" y="-232"/>
         </scene>
-        <!--View Controller-->
+        <!--HUDViewController-->
         <scene sceneID="i97-7G-Q5I">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vtN-ef-3F6" customClass="HUDViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vtN-ef-3F6" userLabel="HUDViewController" customClass="HUDViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Fb-bw-kam"/>
                         <viewControllerLayoutGuide type="bottom" id="crc-rS-26o"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SMD-T5-nm6">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="566"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rX-Ia-pJz">
+                                <rect key="frame" x="16" y="8" width="37" height="30"/>
+                                <state key="normal" title="Lions">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lionsButton:" destination="vtN-ef-3F6" eventType="touchUpInside" id="Ypt-2b-qOH"/>
+                                    <action selector="lionsButtonTapped:" destination="vtN-ef-3F6" eventType="touchUpInside" id="rVH-5K-WKt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ND-za-FlF">
+                                <rect key="frame" x="16" y="46" width="42" height="30"/>
+                                <state key="normal" title="Tigers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tigersButton:" destination="vtN-ef-3F6" eventType="touchUpInside" id="d12-fC-jm7"/>
+                                    <action selector="tigersButtonTapped:" destination="vtN-ef-3F6" eventType="touchUpInside" id="PiJ-eF-rl7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONk-QT-Vkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="-395"/>
+            <point key="canvasLocation" x="2126" y="-249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rMr-dr-wzb">

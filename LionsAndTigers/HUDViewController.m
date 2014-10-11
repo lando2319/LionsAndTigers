@@ -14,6 +14,15 @@
 
 @implementation HUDViewController
 
+-(void)tigersButtonTapped {
+
+}
+
+-(void)lionsButtonTapped {
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -33,5 +42,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)lionsButtonTappedPushed:(id)sender {
+//    NSLOG(@"Lions");
+}
+
+- (IBAction)tigersButtonTappedPushed:(id)sender {
+//    NSLOG(@"Tigers");
+}
 
 @end

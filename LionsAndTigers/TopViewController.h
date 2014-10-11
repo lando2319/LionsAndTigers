@@ -10,6 +10,7 @@
 
 @protocol TopDelegate
 
+-(void)hambugerPressed:(id)sender;
 
 @end
 

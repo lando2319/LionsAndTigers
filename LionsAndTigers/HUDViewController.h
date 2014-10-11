@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HUDDelegate
+
+@end
+
 @interface HUDViewController : UIViewController
+
+-(void)tigersButtonTapped;
+-(void)lionsButtonTapped;
+
+@property id <HUDDelegate> delegate;
+
 
 @end

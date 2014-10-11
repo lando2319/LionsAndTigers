@@ -19,7 +19,7 @@
 */
 
 -(IBAction)topRevealButtonTapped:(id)sender {
-    NSLog(@"I log it all");
+    [self.delegate hambugerPressed:self];
 }
 
 
